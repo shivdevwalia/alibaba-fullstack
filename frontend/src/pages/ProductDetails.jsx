@@ -787,9 +787,7 @@ const ProductDetails = () => {
                 <Text fontSize="xs" color="gray.500">
                   1 - 49 pieces
                 </Text>
-                <Text fontSize="2xl" fontWeight="600" color="#FF6A00">
-                  ${product.price}
-                </Text>
+               
                 <Text
                   fontSize="xs"
                   color="gray.400"
@@ -834,8 +832,8 @@ const ProductDetails = () => {
               {/* <Text fontSize="xs" color="gray.500">
                 ≥ 1000 pieces
               </Text> */}
-              <Text fontSize="2xl" fontWeight="600" color="gray.700">
-                ${(product.price * 0.92).toFixed(2)}
+              <Text fontSize="2xl" fontWeight="600" color="#FF6A00">
+                ${product.price}
               </Text>
               {/* <Text
                 fontSize="xs"
