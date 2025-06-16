@@ -67,55 +67,55 @@ A full-stack, role-based e-commerce platform inspired by Alibaba. Built using th
 
 ### 🏠 Homepage  
 Landing page showing navbar, banners, and product highlights.  
-![Homepage]()
+![Homepage](https://github.com/user-attachments/assets/e9091c7a-4b09-4029-95c7-15bf82f87d8e)
 
 ---
 
 ### 🛍️ Product Listing Page  
 Users can browse, search, and filter products by price.  
-![Product Listing](https://your-link/product-listing.png)
+![Product Listing](https://github.com/user-attachments/assets/7b2a6ce4-c9f0-4d96-a4b3-a4ad196c878a)
 
 ---
 
 ### 📄 Individual Product Page  
 Detailed view with product variants, description, stock, and Add to Cart.  
-![Product Details](https://your-link/product-details.png)
+![Product Details](https://github.com/user-attachments/assets/41a6a74d-d3dd-4842-bb96-450fb2e7c97b)
 
 ---
 
 ### 🛒 Cart Page  
 Cart with selected items, total price, and checkout button.  
-![Cart](https://your-link/cart.png)
+![Cart](https://github.com/user-attachments/assets/769f65ad-3df1-4c2b-843e-fd6bb5d040dd)
 
 ---
 
 ### 🔐 Sign-In Page  
 Login with email/password or Google account.  
-![Sign In](https://your-link/signin.png)
+![Sign In](https://github.com/user-attachments/assets/35eb42c4-fe95-4e8a-bf7f-d6f018ae21c3)
 
 ---
 
 ### 🧑‍💼 Admin Dashboard  
 Access to manage products, stock, and orders.  
-![Admin Dashboard](https://your-link/admin-dashboard.png)
+![Admin Dashboard](https://github.com/user-attachments/assets/39018766-23de-42b6-9beb-6189ab4a355e)
 
 ---
 
 ### 📦 Orders Management (Admin)  
 Admin can view and manage placed orders.  
-![Orders](https://your-link/admin-orders.png)
+![Orders](https://github.com/user-attachments/assets/d2166010-e08c-41ca-8d40-d1249dfe62ba)
 
 ---
 
 ### 📝 Edit About Us Page  
 Admin can update About Us content from the frontend.  
-![Edit About](https://your-link/edit-about.png)
+![Edit About](https://github.com/user-attachments/assets/8af63a74-a0d7-413b-af08-882c0cfafbbf)
 
 ---
 
 ### ✉️ Contact Form with CAPTCHA  
 CAPTCHA-protected contact form with email notifications.  
-![Contact Form](https://your-link/contact-form.png)
+![Contact Form](https://github.com/user-attachments/assets/e0d7ca9c-65aa-46fd-bc72-b0ec9eed83f5)
 
 
 
