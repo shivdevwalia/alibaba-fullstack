@@ -138,7 +138,7 @@ const ContactForm = () => {
               />
             </FormControl>
             <ReCAPTCHA
-              sitekey="6Ldo2F0rAAAAADUaSyZt4d6OVmqpwZ74sYEug8WH"
+              sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
               onChange={handleCaptchaChange}
             ></ReCAPTCHA>
 
