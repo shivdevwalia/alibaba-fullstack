@@ -58,7 +58,7 @@
 //   useEffect(() => {
 //     async function fetchProduct() {
 //       try {
-//        
+//
 //         if (!res.ok) throw new Error("Failed to fetch product");
 //         const data = await res.json();
 //         setProduct(data);
@@ -510,7 +510,9 @@ const ProductDetails = () => {
   useEffect(() => {
     async function fetchProduct() {
       try {
-        const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/products/${id}`);
+        const res = await fetch(
+          `${import.meta.env.VITE_API_BASE_URL}/products/${id}`
+        );
         if (!res.ok) throw new Error("Failed to fetch product");
         const data = await res.json();
         setProduct(data);
@@ -780,7 +782,7 @@ const ProductDetails = () => {
 
           {/* Pricing tiers */}
           <Box mb={6}>
-            <HStack spacing={[2, 4, 8]} flexWrap="wrap">
+            {/* <HStack spacing={[2, 4, 8]} flexWrap="wrap">
               <VStack align="start" spacing={1}>
                 <Text fontSize="xs" color="gray.500">
                   1 - 49 pieces
@@ -826,22 +828,22 @@ const ProductDetails = () => {
                   $4.01
                 </Text>
               </VStack>
-            </HStack>
+            </HStack> */}
 
             <Box mt={4}>
-              <Text fontSize="xs" color="gray.500">
+              {/* <Text fontSize="xs" color="gray.500">
                 ≥ 1000 pieces
-              </Text>
+              </Text> */}
               <Text fontSize="2xl" fontWeight="600" color="gray.700">
                 ${(product.price * 0.92).toFixed(2)}
               </Text>
-              <Text
+              {/* <Text
                 fontSize="xs"
                 color="gray.400"
                 textDecoration="line-through"
               >
                 $3.94
-              </Text>
+              </Text> */}
             </Box>
           </Box>
 
