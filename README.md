@@ -38,6 +38,7 @@ A full-stack, role-based e-commerce platform inspired by Alibaba. Built using th
 ### 🛍️ E-Commerce Functionality
 - View products with variants (images, attributes, stock, price)
 - **Search** products by name (real-time filtering)
+- **Filter** products by price range
 - Add to cart and checkout
 - Cart synced with localStorage
 - Checkout updates stock in real-time
