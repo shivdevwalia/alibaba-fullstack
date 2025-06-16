@@ -39,7 +39,7 @@ function SearchBar() {
       setLoading(true);
       try {
         const response = await fetch(
-          `http://localhost:8000/products?q=${encodeURIComponent(query)}`
+          `${import.meta.env.VITE_API_BASE_URL}/products?q=${encodeURIComponent(query)}`
         );
         const data = await response.json();
         const names = [...new Set(data.map((p) => p.name))].slice(0, 10);

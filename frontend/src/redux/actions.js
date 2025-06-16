@@ -54,7 +54,7 @@ export const signup = (payload) => async (dispatch) => {
   dispatch({ type: SIGNUP_REQUEST });
 
   try {
-    const res = await fetch("http://localhost:8000/users/register", {
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/users/register`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -71,7 +71,7 @@ export const signin = (payload) => async (dispatch) => {
   dispatch({ type: SIGNIN_REQUEST });
 
   try {
-    const res = await fetch("http://localhost:8000/users/login", {
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/users/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -103,7 +103,7 @@ export const forgotPassword = (payload) => async (dispatch) => {
   dispatch({ type: CHANGE_PASSWORD_REQUEST });
 
   try {
-    const res = await fetch("http://localhost:8000/users/forgotpassword", {
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/users/forgotpassword`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -135,10 +135,10 @@ export const getProducts = (category) => async (dispatch) => {
   dispatch({ type: GET_PRODUCTS_REQUEST });
   try {
     const url = category
-      ? `http://localhost:8000/dashboard?category=${encodeURIComponent(
+      ? `${import.meta.env.VITE_API_BASE_URL}/dashboard?category=${encodeURIComponent(
           category
         )}`
-      : "http://localhost:8000/dashboard";
+      : `${import.meta.env.VITE_API_BASE_URL}/dashboard`;
 
     const res = await fetch(url, {
       headers: {
@@ -162,7 +162,7 @@ export const getProducts = (category) => async (dispatch) => {
 //       if (category) params.append("category", category);
 //       if (q) params.append("q", q);
 
-//       const url = `http://localhost:8000/products?${params.toString()}`;
+//       const url = 
 //       const res = await fetch(url);
 //       if (!res.ok) throw new Error("Failed to fetch products");
 //       const data = await res.json();
@@ -183,7 +183,7 @@ export const getProductsUser =
       if (q) params.append("q", q);
       if (sort) params.append("sort", sort); // ✅ add this
 
-      const url = `http://localhost:8000/products?${params.toString()}`;
+      const url = `${import.meta.env.VITE_API_BASE_URL}/products?${params.toString()}`;
       const res = await fetch(url);
       if (!res.ok) throw new Error("Failed to fetch products");
       const data = await res.json();
@@ -197,7 +197,7 @@ export const getProductsUser =
 export const addProductAdmin = (product) => async (dispatch) => {
   dispatch({ type: ADD_PRODUCT_REQUEST });
   try {
-    const res = await fetch("http://localhost:8000/dashboard/add", {
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/dashboard/add`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -216,7 +216,7 @@ export const addProductAdmin = (product) => async (dispatch) => {
 export const updateProductAdmin = (id, payload) => async (dispatch) => {
   dispatch({ type: UPDATE_PRODUCT_REQUEST });
   try {
-    const res = await fetch(`http://localhost:8000/dashboard/update/${id}`, {
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/dashboard/update/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -235,7 +235,7 @@ export const updateProductAdmin = (id, payload) => async (dispatch) => {
 export const deleteProductAdmin = (id) => async (dispatch) => {
   dispatch({ type: DELETE_PRODUCT_REQUEST });
   try {
-    const res = await fetch(`http://localhost:8000/dashboard/delete/${id}`, {
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/dashboard/delete/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: getToken(),
@@ -251,7 +251,7 @@ export const deleteProductAdmin = (id) => async (dispatch) => {
 export const getCart = () => async (dispatch) => {
   dispatch({ type: GET_CART_REQUEST });
   try {
-    const res = await fetch("http://localhost:8000/cart", {
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/cart`, {
       headers: {
         Authorization: getToken(),
       },
@@ -269,7 +269,7 @@ export const addCartItem =
   async (dispatch) => {
     dispatch({ type: ADD_CART_ITEM_REQUEST });
     try {
-      const res = await fetch("http://localhost:8000/cart/add", {
+      const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/cart/add`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -291,7 +291,7 @@ export const addCartItem =
 export const updateCartItem = (productId, payload) => async (dispatch) => {
   dispatch({ type: UPDATE_CART_ITEM_REQUEST });
   try {
-    const res = await fetch(`http://localhost:8000/cart/update/${productId}`, {
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/cart/update/${productId}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -313,7 +313,7 @@ export const updateCartItem = (productId, payload) => async (dispatch) => {
 export const deleteCartItem = (productId) => async (dispatch) => {
   dispatch({ type: DELETE_CART_ITEM_REQUEST });
   try {
-    const res = await fetch(`http://localhost:8000/cart/delete/${productId}`, {
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/cart/delete/${productId}`, {
       method: "DELETE",
       headers: {
         Authorization: getToken(),
@@ -333,7 +333,7 @@ export const placeOrder = (orderItems, totalAmount) => async (dispatch) => {
   dispatch({ type: PLACE_ORDER_REQUEST });
 
   try {
-    const res = await fetch("http://localhost:8000/orders/place", {
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/orders/place`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -358,7 +358,7 @@ export const getAllOrders = () => async (dispatch) => {
   dispatch({ type: GET_ORDERS_REQUEST });
 
   try {
-    const res = await fetch("http://localhost:8000/orders", {
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/orders`, {
       headers: {
         Authorization: getToken(),
       },
@@ -379,7 +379,7 @@ export const getAllOrders = () => async (dispatch) => {
 export const getAboutUs = () => async (dispatch) => {
   dispatch({ type: GET_ABOUTUS_REQUEST });
   try {
-    const res = await fetch("http://localhost:8000/aboutus");
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/aboutus`);
     if (!res.ok) throw new Error("Failed to fetch About Us");
     const data = await res.json();
     console.log("mydata", data);
@@ -393,7 +393,7 @@ export const updateAboutUs = (id, payload) => async (dispatch) => {
   dispatch({ type: UPDATE_ABOUTUS_REQUEST });
 
   try {
-    const res = await fetch(`http://localhost:8000/aboutus/${id}`, {
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/aboutus/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -418,7 +418,7 @@ export const submitContact = (payload) => async (dispatch) => {
   dispatch({ type: SUBMIT_CONTACT_REQUEST });
 
   try {
-    const res = await fetch("http://localhost:8000/contact", {
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

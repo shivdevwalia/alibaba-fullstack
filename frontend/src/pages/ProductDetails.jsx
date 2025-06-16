@@ -58,7 +58,7 @@
 //   useEffect(() => {
 //     async function fetchProduct() {
 //       try {
-//         const res = await fetch(`http://localhost:8000/products/${id}`);
+//        
 //         if (!res.ok) throw new Error("Failed to fetch product");
 //         const data = await res.json();
 //         setProduct(data);
@@ -510,7 +510,7 @@ const ProductDetails = () => {
   useEffect(() => {
     async function fetchProduct() {
       try {
-        const res = await fetch(`http://localhost:8000/products/${id}`);
+        const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/products/${id}`);
         if (!res.ok) throw new Error("Failed to fetch product");
         const data = await res.json();
         setProduct(data);
