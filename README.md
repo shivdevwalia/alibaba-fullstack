@@ -63,7 +63,9 @@ A full-stack, role-based e-commerce platform inspired by Alibaba. Built using th
 /Alibaba
   /backend    # Express backend  
   /frontend   # React frontend
-```bash
+```
+
+---
 
 ## 📸 Screenshots
 
@@ -118,6 +120,3 @@ Admin can update About Us content from the frontend.
 ### ✉️ Contact Form with CAPTCHA  
 CAPTCHA-protected contact form with email notifications.  
 ![Contact Form](https://github.com/user-attachments/assets/e0d7ca9c-65aa-46fd-bc72-b0ec9eed83f5)
-
-
-
