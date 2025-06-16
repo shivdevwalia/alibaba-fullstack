@@ -63,7 +63,7 @@ A full-stack, role-based e-commerce platform inspired by Alibaba. Built using th
 /Alibaba
   /backend    # Express backend  
   /frontend   # React frontend
-
+```bash
 
 ## 📸 Screenshots
 
