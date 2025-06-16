@@ -1,4 +1,4 @@
-# 🛒 Alibaba E-Commerce Platform (Full Stack)
+![Screenshot 2025-06-16 171709](https://github.com/user-attachments/assets/09c83ffa-3108-47ab-ad26-73ae9a2741fb)# 🛒 Alibaba E-Commerce Platform (Full Stack)
 
 A full-stack, role-based e-commerce platform inspired by Alibaba. Built using the MERN stack, it features authentication (including Google Sign-In), an admin dashboard, dynamic product management, real-time stock updates, email integration, and CAPTCHA-protected contact forms.
 
@@ -62,3 +62,60 @@ A full-stack, role-based e-commerce platform inspired by Alibaba. Built using th
 /Alibaba
   /backend  # Express backend
   /frontend   # React frontend
+
+## 📸 Screenshots
+
+### 🏠 Homepage  
+Landing page showing navbar, banners, and product highlights.  
+![Homepage]()
+
+---
+
+### 🛍️ Product Listing Page  
+Users can browse, search, and filter products by price.  
+![Product Listing](https://your-link/product-listing.png)
+
+---
+
+### 📄 Individual Product Page  
+Detailed view with product variants, description, stock, and Add to Cart.  
+![Product Details](https://your-link/product-details.png)
+
+---
+
+### 🛒 Cart Page  
+Cart with selected items, total price, and checkout button.  
+![Cart](https://your-link/cart.png)
+
+---
+
+### 🔐 Sign-In Page  
+Login with email/password or Google account.  
+![Sign In](https://your-link/signin.png)
+
+---
+
+### 🧑‍💼 Admin Dashboard  
+Access to manage products, stock, and orders.  
+![Admin Dashboard](https://your-link/admin-dashboard.png)
+
+---
+
+### 📦 Orders Management (Admin)  
+Admin can view and manage placed orders.  
+![Orders](https://your-link/admin-orders.png)
+
+---
+
+### 📝 Edit About Us Page  
+Admin can update About Us content from the frontend.  
+![Edit About](https://your-link/edit-about.png)
+
+---
+
+### ✉️ Contact Form with CAPTCHA  
+CAPTCHA-protected contact form with email notifications.  
+![Contact Form](https://your-link/contact-form.png)
+
+
+
