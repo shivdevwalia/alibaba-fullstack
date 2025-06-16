@@ -31,7 +31,9 @@ app.use("/dashboard", adminRouter);
 app.use("/orders", orderRouter);
 app.use("/aboutus", aboutUsRouter);
 app.use("/contact", contactRouter);
-app.listen(8000, async () => {
+
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, async () => {
   try {
     await connection;
     console.log("connected to DB");
