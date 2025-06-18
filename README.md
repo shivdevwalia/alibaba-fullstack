@@ -1,4 +1,4 @@
-# 🛒 Alibaba E-Commerce Platform (Full Stack)
+f# 🛒 Alibaba E-Commerce Platform (Full Stack)
 
 A full-stack, role-based e-commerce platform inspired by Alibaba. Built using the MERN stack, it features authentication (including Google Sign-In), an admin dashboard, dynamic product management, real-time stock updates, email integration, and CAPTCHA-protected contact forms.
 
@@ -37,7 +37,7 @@ A full-stack, role-based e-commerce platform inspired by Alibaba. Built using th
 
 ### 🛍️ E-Commerce Functionality
 - View products with attributes (images, attributes, stock, price)
-- **Search** products by name (real-time filtering)
+- **Search** products by name with real-time filtering and **Debouncing**
 - **Filter** products by price range
 - Add to cart and checkout
 - Cart synced with localStorage
