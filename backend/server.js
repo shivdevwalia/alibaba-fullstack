@@ -16,7 +16,6 @@ app.use(express.json());
 app.use(
   cors({
     origin: "https://alibaba-fullstack.vercel.app",
-    credentials: true,
   })
 );
 
